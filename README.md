@@ -11,6 +11,7 @@ If used with Synology UPS Network Server, please remember to add container's IP 
 [UPS]
 # Address of NUT server
 #hostname=localhost
+#instance=ups
 
 [MQTT]
 # Base MQTT topic
@@ -27,6 +28,9 @@ If used with Synology UPS Network Server, please remember to add container's IP 
 
 # MQTT password
 #password=
+
+# Topics to send, * means all, can be semicolumn separated list of prefixes
+#topics=*
 
 [General]
 # Polling interval in seconds

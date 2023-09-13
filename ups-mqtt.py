@@ -71,6 +71,9 @@ def process():
 
 
 while True:
-    process()
+    try:
+        process()
+    except Exception as e:
+        print(str(e))
     sleep(interval)
     
